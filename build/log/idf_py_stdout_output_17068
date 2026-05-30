@@ -1,0 +1,20 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\lab project 1\water_level_project\build\bootloader\esp-idf\esptool_py" && C:\Users\Admin\Downloads\app\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Admin/Downloads/app/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 "C:/lab project 1/water_level_project/build/bootloader/bootloader.bin""
+Bootloader binary size 0x5180 bytes. 0x2e80 bytes (36%) free.
+[2/9] Completed 'bootloader'
+[3/9] Building C object esp-idf/water_level/CMakeFiles/__idf_water_level.dir/water_level.c.obj
+C:/lab project 1/water_level_project/main/water_level/water_level.c:1222:20: warning: 'action_modem_sleep' defined but not used [-Wunused-function]
+ 1222 | static app_event_t action_modem_sleep(void)
+      |                    ^~~~~~~~~~~~~~~~~~
+[4/9] Linking C static library esp-idf\water_level\libwater_level.a
+[5/9] Generating ld/sections.ld
+[6/9] Building C object CMakeFiles/water_level_project.elf.dir/project_elf_src_esp32c3.c.obj
+[7/9] Linking CXX executable water_level_project.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.11.0
+Creating esp32c3 image...
+Merged 2 ELF sections
+Successfully created esp32c3 image.
+Generated C:/lab project 1/water_level_project/build/water_level_project.bin
+[9/9] cmd.exe /C "cd /D "C:\lab project 1\water_level_project\build\esp-idf\esptool_py" && C:\Users\Admin\Downloads\app\Espressif\python_env\idf5.3_py3.11_env\Scripts\python.exe C:/Users/Admin/Downloads/app/Espressif/frameworks/esp-idf-v5.3.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/lab project 1/water_level_project/build/partition_table/partition-table.bin" "C:/lab project 1/water_level_project/build/water_level_project.bin""
+water_level_project.bin binary size 0x5daa0 bytes. Smallest app partition is 0x100000 bytes. 0xa2560 bytes (63%) free.

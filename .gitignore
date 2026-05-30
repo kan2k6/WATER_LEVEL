@@ -1,0 +1,10 @@
+build/
+managed_components/
+sdkconfig.old
+
+# VS Code local settings
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
